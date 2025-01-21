@@ -1,0 +1,32 @@
+# Sample python app using Boto3 for removing public access in S3,EC2 and RDS
+
+
+# Install and run tests
+
+make install
+make runTests
+
+
+# Clean env
+
+make clean
+
+
+# Folder structure
+
+    |-src
+    | |-main.py     - Sample 
+    | |-boto_public - Contains implentations using boto3
+    | | |-s3_acl.py
+    | | |-rds.py
+    | | |-ec2.py
+    | | |-__init__.py
+    | |-__init__.py
+    |-tests         - Tests for implementations using moto for mock all aws services
+    | |-test_ec2.py
+    | |-test_s3.py
+    | |-test_rds.py
+    |-env.yml 
+    |-Makefile
+    |-requirements.txt
+    |-README 
